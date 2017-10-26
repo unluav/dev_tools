@@ -12,7 +12,7 @@ require('dotenv').config({path: './env.vars'});
 var router = require('./server/router');
 
 /* app variables and objects */
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 53900;
 var app = express();
 var server = httpmod.Server(app);
 var sio = require('socket.io')(server);
